@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  align-items: center;
+}
+h1 {
+  flex: 1;
+  text-align: center;
+}
+nav {
+  text-align: right;
+}
