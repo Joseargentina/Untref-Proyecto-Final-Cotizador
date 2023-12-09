@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto Serif", serif;
 }
 
 a {
@@ -11,11 +13,11 @@ a {
 body {
   height: 100vh;
   max-height: 100vh;
+  background-color: #8f8fd7;
 }
 
 main {
   height: 100vh;
   max-height: 100vh;
   margin: 0 auto;
-  width: calc(100% - 2rem);
 }

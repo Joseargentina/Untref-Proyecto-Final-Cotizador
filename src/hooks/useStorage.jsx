@@ -9,8 +9,8 @@ const useStorage = (clave, valorInicial) => {
   });
 
   useEffect(() => localStorage.setItem(clave, JSON.stringify(valor)), [valor]);
-};
 
-return [valor, setValor];
+  return [valor, setValor];
+};
 
 export default useStorage;

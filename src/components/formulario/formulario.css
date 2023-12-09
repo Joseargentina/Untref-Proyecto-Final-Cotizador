@@ -1,0 +1,84 @@
+.contenedor-formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem auto;
+  justify-content: center;
+  background-color: #e1e1e1;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  box-shadow: 26px 28px 15px -8px rgba(0, 0, 0, 0.15);
+  border-radius: 0.7rem;
+}
+.titulo-formulario {
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+.my-swal-container {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/*mensaje de Sweet alert*/
+
+.my-swal-title {
+  color: #344378;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.my-swal-icon {
+  font-size: 1rem;
+}
+.swal2-success-ring {
+  border-color: #429a5e !important;
+}
+.swal2-success-line-tip,
+.swal2-success-line-long {
+  background-color: #429a5e !important;
+}
+.swal2-confirm {
+  background-color: #344378 !important;
+}
+/*icono de guardar*/
+.icono-guardar {
+  font-size: 2rem;
+}
+/*icono de error*/
+.swal2-x-mark {
+  color: #344378 !important;
+}
+.error-button {
+  background-color: #344378 !important;
+  color: #fff !important;
+}
+.error-button:hover {
+  background-color: #243a82;
+}
+
+/* mensaje de cotizacion guardada */
+
+.mi-toastify-success {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem;
+  color: #e1e1e1;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 1200px) {
+  .titulo-formulario {
+    padding: 1rem;
+  }
+
+  .contenedor-formulario {
+    width: 70%;
+    margin: 5rem auto;
+  }
+}

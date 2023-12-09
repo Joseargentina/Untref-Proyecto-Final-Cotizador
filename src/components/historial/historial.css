@@ -1,0 +1,116 @@
+.header-historial {
+  background-color: #313c63;
+  padding: 1rem;
+}
+.titulo-historial {
+  text-align: center;
+  color: #e1e1e1;
+  font-size: 1.2rem;
+}
+.contenedor-tabla {
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 26px 28px 15px -8px rgba(0, 0, 0, 0.15);
+  border-radius: 0.7rem;
+  width: calc(100% - 2rem);
+  background-color: #e1e1e1;
+}
+.tabla-cotizaciones {
+  border-collapse: collapse;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  overflow-x: auto;
+  background-color: #e1e1e1;
+}
+
+.tabla-cotizaciones tr {
+  border-bottom: 1px solid #00061a;
+  font-size: 0.7rem;
+}
+.tabla-cotizaciones th,
+.tabla-cotizaciones td {
+  padding: 8px;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.btn-volver {
+  text-align: center;
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: center;
+  background-color: #313c63;
+  color: #e1e1e1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-volver:hover {
+  background-color: #243a82;
+  color: #e1e1e1;
+}
+.no-datos {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #e1e1e1;
+}
+
+.btn-nodatos {
+  margin: 0 auto;
+  width: 20%;
+}
+@media (min-width: 430px) {
+  .tabla-cotizaciones th,
+  .tabla-cotizaciones td,
+  .btn-volver {
+    font-size: 1rem;
+  }
+  .titulo-historial {
+    font-size: 1.1rem;
+  }
+  .contenedor-tabla {
+    width: 96%;
+    margin: 5rem auto;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor-tabla {
+    width: 96%;
+    margin: 5rem auto;
+  }
+  .tabla-cotizaciones {
+    display: inline-table;
+  }
+
+  .tabla-cotizaciones th,
+  .tabla-cotizaciones td,
+  .btn-volver {
+    font-size: 1.2rem;
+  }
+  .titulo-historial {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenedor-tabla {
+    width: 70%;
+    margin: 6rem auto;
+  }
+  .titulo-historial {
+    font-size: 1.8rem;
+  }
+  .tabla-cotizaciones {
+    overflow-y: auto;
+  }
+}

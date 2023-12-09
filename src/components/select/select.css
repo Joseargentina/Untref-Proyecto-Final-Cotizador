@@ -1,0 +1,21 @@
+.label {
+  text-align: center;
+}
+
+.select {
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.option,
+.option-select {
+  text-align: center;
+  cursor: pointer;
+}
+
+.option-select {
+  font-size: 1.1rem;
+  cursor: pointer;
+}

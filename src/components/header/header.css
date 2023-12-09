@@ -1,11 +1,27 @@
-header {
+.header {
   display: flex;
   align-items: center;
+  background-color: #313c63;
+  padding: 1rem;
 }
-h1 {
+.titulo-principal {
   flex: 1;
+  color: #e1e1e1;
+  padding-left: 4rem;
   text-align: center;
+  font-size: 1.8rem;
+}
+.icono-historial {
+  color: #e1e1e1;
+  font-size: 1.5rem;
 }
 nav {
   text-align: right;
+}
+
+@media (min-width: 1330px) {
+  .titulo-principal {
+    padding-left: 2rem;
+    font-size: 1.8rem;
+  }
 }
