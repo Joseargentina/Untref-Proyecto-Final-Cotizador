@@ -29,6 +29,10 @@
   overflow-x: auto;
   background-color: #e1e1e1;
 }
+.tabla-cotizaciones tr:hover {
+  background-color: #00061a;
+  color: #e1e1e1;
+}
 
 .tabla-cotizaciones tr {
   border-bottom: 1px solid #00061a;
