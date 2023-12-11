@@ -14,13 +14,13 @@ Desarrollé mi aplicación con **React** y **Vite**. En el `App.jsx` tengo el `B
 
 - En el componente Home tengo el componente Header y el componente Formulario.
 
-#### Componente Hustorial
+#### Componente Historial
 
-El componente `Historial` utiliza el estado para almacenar los datos de las cotizaciones y utiliza el `useEffect` para comprobar si hay datos guardados en el local storage. Si hay datos guardados, el componente los recupera y los muestra en la tabla. Si no hay datos guardados, el componente muestra un mensaje indicando que no hay datos disponibles. El componente también incluye un botón de volver que permite al usuario volver a la página principal.
+- El componente `Historial` utiliza el estado para almacenar los datos de las cotizaciones y utiliza el `useEffect` para comprobar si hay datos guardados en el local storage. Si hay datos guardados, el componente los recupera y los muestra en la tabla. Si no hay datos guardados, el componente muestra un mensaje indicando que no hay datos disponibles. El componente también incluye un botón de volver que permite al usuario volver a la página principal.
 
 #### Componente Layouts
 
-En el componente de Layouts tengo el Outlet.
+- En el componente de Layouts tengo el Outlet.
 
 #### Componente Formulario
 
@@ -52,11 +52,10 @@ El Select es un componente de Formulario que muestra dos selectores desplegables
 #### Componente Button
 
 - El componente Button recibe dos propiedades: isLoading y children .
-
-* El valor de isLoading determina si el botón está en un estado de carga o no.
-* El valor de children representa el contenido del botón, que puede ser cualquier elemento o texto.
-* El atributo disabled del botón se establece en isLoading , lo que significa que el botón estará deshabilitado si isLoading es true .
-* El texto del botón se establece en función del valor de isLoading . Si isLoading es true , el texto del botón será "Cargando...". De lo contrario, el texto del botón será "Cotizar".
+- El valor de isLoading determina si el botón está en un estado de carga o no.
+- El valor de children representa el contenido del botón, que puede ser cualquier elemento o texto.
+- El atributo disabled del botón se establece en isLoading , lo que significa que el botón estará deshabilitado si isLoading es true .
+- El texto del botón se establece en función del valor de isLoading . Si isLoading es true , el texto del botón será "Cargando...". De lo contrario, el texto del botón será "Cotizar".
 
 #### Componente Input
 
