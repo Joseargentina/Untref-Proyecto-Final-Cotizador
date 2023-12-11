@@ -45,10 +45,7 @@
 .swal2-confirm {
   background-color: #344378 !important;
 }
-/*icono de guardar*/
-.icono-guardar {
-  font-size: 2rem;
-}
+
 /*icono de error*/
 .swal2-x-mark {
   color: #344378 !important;

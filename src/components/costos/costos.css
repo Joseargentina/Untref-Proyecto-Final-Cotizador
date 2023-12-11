@@ -9,6 +9,13 @@
   font-size: 1.2rem;
   padding: 1rem;
 }
+
+/*icono de guardar*/
+.icono-guardar {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   .costos {
     font-size: 1.5rem;
