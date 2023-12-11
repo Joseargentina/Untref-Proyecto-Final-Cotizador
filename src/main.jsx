@@ -6,6 +6,3 @@ import "./index.css";
 const root = document.getElementById("root");
 const app = createRoot(root);
 app.render(<App />);
-
-// const entry = createRoot(document.getElementById("root"));
-// entry.render(<App />);

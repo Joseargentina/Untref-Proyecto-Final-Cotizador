@@ -5,7 +5,7 @@
 .select {
   padding: 0.5rem;
   border-radius: 0.7rem;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
@@ -18,4 +18,20 @@
 .option-select {
   font-size: 1.1rem;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .label {
+    font-size: 1.3rem;
+  }
+  .select {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .label {
+    font-size: 1.4rem;
+  }
+  .select {
+    font-size: 1.3rem;
+  }
 }

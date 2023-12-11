@@ -5,7 +5,7 @@ import "./header.css";
 const Header = () => {
   return (
     <header className="header">
-      <h1 className="titulo-principal">Seguros del Hogar</h1>
+      <h1 className="titulo-principal">Hogar Seguros Online</h1>
       <nav>
         <Link to={"/historial"}>
           <RiHistoryLine className="icono-historial" />

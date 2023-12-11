@@ -1,6 +1,7 @@
 import "./input.css";
+
 const Input = ({ metrosRef, onChange }) => {
-  const handleChange = (e) => {
+  const cambioEntrada = (e) => {
     // Obtener el valor del input
     const valor = e.target.value;
     // Llamar a la función onChange pasando el valor
@@ -20,7 +21,7 @@ const Input = ({ metrosRef, onChange }) => {
         min={20}
         max={1000}
         defaultValue={20}
-        onChange={handleChange}
+        onChange={cambioEntrada}
       />
     </>
   );

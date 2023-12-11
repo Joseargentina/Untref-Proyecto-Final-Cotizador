@@ -11,7 +11,9 @@ const Costos = ({ precioSeguro, guardarCotizacion }) => {
         </>
       )}
       {!precioSeguro && (
-        <p className="costos">Precio de la póliza: ${precioInicial}</p>
+        <p className="costos">
+          Precio aproximado de la póliza: ${precioInicial}
+        </p>
       )}
     </section>
   );

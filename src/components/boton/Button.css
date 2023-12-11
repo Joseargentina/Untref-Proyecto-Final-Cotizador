@@ -2,7 +2,7 @@
   display: inline-flex;
   background-color: #344378;
   color: #fff;
-  width: 35%;
+  width: 60%;
   margin: 1rem auto 0;
   align-items: center;
   justify-content: center;
@@ -22,4 +22,11 @@
     4px
   ); /* Realiza una traslación más pronunciada hacia abajo */
   box-shadow: none; /* Elimina la sombra al hacer clic */
+}
+
+@media (min-width: 768px) {
+  .cotizar-button {
+    font-size: 1.4rem;
+    width: 45%;
+  }
 }

@@ -5,10 +5,10 @@
 .titulo-historial {
   text-align: center;
   color: #e1e1e1;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .contenedor-tabla {
-  margin: 5rem auto;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -30,7 +30,7 @@
   background-color: #e1e1e1;
 }
 .tabla-cotizaciones tr:hover {
-  background-color: #00061a;
+  background-color: #313c63;
   color: #e1e1e1;
 }
 
@@ -73,7 +73,10 @@
   margin: 0 auto;
   width: 20%;
 }
-@media (min-width: 430px) {
+@media (min-width: 425px) {
+  .contenedor-tabla {
+    margin: 5rem auto;
+  }
   .tabla-cotizaciones th,
   .tabla-cotizaciones td,
   .btn-volver {
@@ -102,14 +105,19 @@
     font-size: 1.2rem;
   }
   .titulo-historial {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .contenedor-tabla {
     width: 70%;
     margin: 6rem auto;
+  }
+  .tabla-cotizaciones th,
+  .tabla-cotizaciones td,
+  .btn-volver {
+    font-size: 1.4rem;
   }
   .titulo-historial {
     font-size: 1.8rem;

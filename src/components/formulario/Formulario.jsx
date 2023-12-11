@@ -6,15 +6,18 @@ import Button from "../boton/Button";
 import Swal from "sweetalert2";
 import "./formulario.css";
 import useStorage from "../../hooks/useStorage";
-import { MdSave } from "react-icons/md";
 import Toastify from "toastify-js";
 
 const Formulario = () => {
+  //Uso el useState() para almacenar las propiedades y el estado asociado a ellas
   const [propiedades, setPropiedad] = useState([]);
 
+  // Almacena la propiedad seleccionada
   const [selectedPropiedad, setSelectedPropiedad] = useState("");
+  // Almacena la ubicación seleccionada
   const [selectedUbicacion, setSelectedUbicacion] = useState("");
   const [metros2, setMetros2] = useState(0);
+  // Almacena el precio del seguro y su estado
   const [precioSeguro, setPrecioSeguro] = useState("");
 
   //uso el hook useStorage para guardar los datos en el localStorage
@@ -25,6 +28,7 @@ const Formulario = () => {
   const [mostrarIconoGuardar, setMostrarIconoGuardar] = useState(false);
   const [mostrarCargando, setMostrarCargando] = useState(false);
 
+  //Uso el hook useRef() para obtener los valores seleccionados o ingresados
   const propiedadRef = useRef(null);
   const ubicacionRef = useRef(null);
   const metrosRef = useRef();
@@ -53,10 +57,12 @@ const Formulario = () => {
   );
 
   const guardarCotizacion = () => {
+    //Se utiliza la referencia  para obtener el valor seleccionado
     const propiedadValue = propiedadRef.current.value;
     const ubicacionValue = ubicacionRef.current.value;
     const metrosValue = metrosRef.current.value;
-    const fechaHoraActual = new Date(); //Obtener la fecha y hora actual
+    //Obtener la fecha y hora actual
+    const fechaHoraActual = new Date();
     const dia = fechaHoraActual.getDate();
     const mes = fechaHoraActual.getMonth() + 1; // Sumamos 1 porque los meses se indexan desde 0
     const año = fechaHoraActual.getFullYear();
@@ -72,9 +78,11 @@ const Formulario = () => {
       fechaCotizada: `${dia}/${mes}/${año}, ${horas}:${minutos}:${segundos}`, // Convertir la fecha y hora en una cadena de texto
       precioSeguro: nuevoPrecioSeguro, //Agregar el precio del seguro a nuevosDatos
     };
+    // Agrega nuevos datos al arreglo de datos del formulario
     setDatosFormulario((prevDatos) => [...prevDatos, nuevosDatos]);
     console.log("Guardando datos:", nuevosDatos);
 
+    // Mensaje de cotización guardada
     Toastify({
       text: "Cotización guardada",
       duration: 3000,
@@ -150,6 +158,7 @@ const Formulario = () => {
       "Precio de la poliza: $",
       nuevoPrecioSeguro
     );
+    // Mensaje de exito de sweet alert
     Swal.fire({
       title: "Se ha realizado la cotización exitosamente!",
       icon: "success",
